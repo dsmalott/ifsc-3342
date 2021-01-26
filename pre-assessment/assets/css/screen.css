@@ -1,11 +1,14 @@
+/* Universal selector that resets any preset margins and padding to 0*/
 * {
 	margin: 0px;
 	padding: 0px;
-}
+} 
 body {
 	text-align: center;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	background-color: #171717;
+	background-image:url('../img/bg-tile.jpg');
+	background-repeat: repeat-x;
 	font-size: 16px;
 	line-height: 1.5em;
 }
@@ -19,8 +22,15 @@ body {
 	border: 1px solid #CCC;
 }
 #header {
+	
 }
 #header h1 a {
+	background-image:url('../img/masthead.jpg');
+	display:block;
+	height:140px;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
 }
 #nav {
 	background-color: #000;
@@ -55,9 +65,16 @@ body {
 #content {
 	margin: 20px;
 }
+#content h2, #content h3, #content h4 {
+	border-bottom:1px solid #c0c0c0;
+}
 #content p {
 	margin-top: 5px;
 	margin-bottom: 15px;
+}
+#content a:hover {
+	background:#FFD700;
+	text-decoration:none;
 }
 #footer {
 	background-color: #000;
@@ -69,4 +86,14 @@ body {
 	line-height: 25px;
 	margin-right: 20px;
 	margin-left: 20px;
+}
+.alert {
+	background:red;
+	color:#fff;
+}
+.img-right {
+	float:right;
+	border:1px solid #c0c0c0;
+	padding:5px;
+	margin:10px 0 10px 20px; /*top right bottom left*/
 }
